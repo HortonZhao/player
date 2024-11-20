@@ -1,0 +1,158 @@
+/* ...existing code... */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #fff;
+  height: 100vh;
+  justify-content: center;
+}
+/* ...existing code... */
+.song-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.song-info img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.song-details h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.song-details p {
+  margin: 5px 0 0 0;
+  font-size: 18px;
+}
+
+#progressBar {
+  width: 80%;
+  margin: 20px 0;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 10px;
+  background: #444;
+  border-radius: 5px;
+  outline: none;
+}
+
+#progressBar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#visualizer {
+  width: 80%;
+  height: 150px;
+  background-color: #000;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#backButton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#backButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+#homeButton {
+  position: absolute;
+  top: 10px;
+  left: 80px; /* 根据需要调整按钮位置 */
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#homeButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.control-buttons {
+  display: flex;
+  gap: 10px; /* 按钮之间的间距 */
+}
+
+.control-buttons button {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.control-buttons button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.song-description {
+  width: 80%;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  text-align: center;
+  max-height: 200px; /* 根据需要调整最大高度 */
+  overflow-y: auto;
+}
+
+.song-description h3 {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+}
+
+.song-description p {
+  margin: 0;
+  font-size: 16px;
+}
+
+#lyrics {
+  width: 80%;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+  min-height: 50px;
+}
+/* ...existing code... */

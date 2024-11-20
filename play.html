@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/player.css" />
+  </head>
+  <body>
+    <!-- 添加主页按钮 -->
+    <button id="homeButton" onclick="goHome()">主页</button>
+    <!-- 添加歌曲封面和介绍 -->
+    <div class="song-info">
+      <!-- 封面路径 -->
+      <img id="cover" alt="歌曲封面" />
+      <div class="song-details">
+        <h2 id="song-title">歌曲标题</h2>
+        <p id="song-artist">歌手姓名</p>
+      </div>
+    </div>
+
+    <!-- 添加音频播放器 -->
+    <audio id="audioPlayer"></audio>
+
+    <!-- 添加播放进度条 -->
+    <input
+      type="range"
+      id="progressBar"
+      value="0"
+      max="100"
+      onchange="seekAudio()"
+    />
+
+    <!-- 添加控制按钮容器 -->
+    <div class="control-buttons">
+      <button onclick="playAudio()">播放</button>
+      <button onclick="pauseAudio()">暂停</button>
+    </div>
+
+    <!-- 添加返回按钮 -->
+    <button id="backButton" onclick="goBack()">返回</button>
+
+    <!-- 添加用于音频可视化的画布 -->
+    <canvas id="visualizer" width="600" height="100"></canvas>
+
+    <!-- 添加歌曲介绍栏目 -->
+    <div class="song-description">
+      <h3>歌曲介绍</h3>
+      <p id="song-description-text">
+        <!-- 内容将通过 JavaScript 动态加载 -->
+      </p>
+    </div>
+
+    <!-- 添加显示歌词的容器 -->
+    <div id="lyrics"></div>
+    <!-- 添加JavaScript脚本 -->
+    <script src="js/player.js"></script>
+  </body>
+</html>
